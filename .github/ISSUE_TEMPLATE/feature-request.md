@@ -1,16 +1,13 @@
----
-name: Feature request
-about: 템플릿
-title: ''
-labels: enhancement
-assignees: ''
+### 📝 이슈 제목
+> 이슈에 대한 설명
 
----
+<br>
 
-## [TITLE]
-### ⬛ Description
-[이슈 설명]
+### ☑️ To-do
+- [ ] 할일 1
+- [ ] 할일 2
 
-### ☑ Todo
-- [ ] 할일1
-- [ ] 할일1
+<br>
+
+### 💡 추가 내용
+추가로 전달할 내용 (없으면 그냥 제목 째로 지워 주세요)
