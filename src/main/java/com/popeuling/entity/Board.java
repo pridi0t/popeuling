@@ -1,13 +1,12 @@
 package com.popeuling.entity;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import javax.persistence.*;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @NoArgsConstructor
@@ -18,11 +17,13 @@ public class Board {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "board_id")
     private Long id;
 
+    @Column(length = 2083)
     private String gitUrl;
 
-    @Column(nullable = false)
+    @Column(nullable = false, length = 2083)
     private String serviceUrl;
 
     @Column(nullable = false)
@@ -37,6 +38,6 @@ public class Board {
     @Lob
     private String Content;
 
-//    @ManyToOne(fetch = FetchType.LAZY)
-//    private Member member;
+    @ManyToOne(fetch = FetchType.LAZY)
+    private Member member;
 }
