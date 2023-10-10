@@ -20,6 +20,7 @@ public class Skill {
     private Long id;
 
     @Enumerated(EnumType.STRING)
+    @Column(nullable = false)
     private SkillSet skillSet;
 
     @ManyToOne(fetch = FetchType.LAZY)
